@@ -2,6 +2,9 @@
 
 Contains scripts used to calculate Fst, XP-EHH, and XP-CLR between inbreds derived from cycle 0 of the BSSS population and Stiff Stalk ex-PVPs.
 
+## XPCLR
+* **1_run_xpclr.sh**
+
 ## XPEHH_Fst
 
 * **1_mod_files.R**: modifies the XP-CLR genotype and map files to be suited for running in `hapbin`.

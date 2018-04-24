@@ -3,7 +3,11 @@
 Contains scripts used to calculate Fst, XP-EHH, and XP-CLR between inbreds derived from cycle 0 of the BSSS population and Stiff Stalk ex-PVPs.
 
 ## XPCLR
-* **1_run_xpclr.sh**
+
+* **1_create_files.R**: pulls the appropriate individuals out of the WiDiv-942 genotype file and formats them for XP-CLR calculation.
+* **2_run_xpclr.sh**: calculates XP-CLR along each chromosome.  This is done using a modified version of the `XPCLR` program created by Chen et al. (2010, doi:10.1101/gr.100545.109).  The modification was done by Hufford et al. (2012, doi:10.1038/ng.2309) to account for windows with no SNP data.
+* **3_eval_SNP_num.R**: creates plots to evaluate the number of SNPs per window on each chromosome.  Also plots XP-CLR values against physical position on each chromosome.
+* **4_bin_XPCLR.R**: calculates maximum XP-CLR scores in 10kb windows, writes the results to file.
 
 ## XPEHH_Fst
 

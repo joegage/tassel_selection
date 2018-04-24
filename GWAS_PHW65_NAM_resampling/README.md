@@ -6,3 +6,10 @@ Contains scripts used for resampling GWAS analysis of the PHW65 NAM population. 
 * **3_permute_resamplingGWAS.sh**: runs permutations in order to determine the RMIP threshold that can be considered significant.  The same model as in step 2 (above) is run, but with the chromosome-specific residuals randomized.  An appropriate RMIP threshold for the true analysis can then be calculated based on the RMIPs of SNPs from the permutations.
 
 **project_parental_SNPs**: this directory contains scripts used to project high-density parental SNPs onto the progeny, using the ~9k GBS markers as a scaffold.
+
+* **1_make_genotype_files.R**: gets high-density resequencing SNPs for just the four parental lines, writes to a new file.
+* **2_project_parents.sh**: runs `project_parental_SNPs.R` separately for each population and chromosome.
+* **project_parental_SNPs.R**: Given a population and chromosome, will project the high-density parental SNPs onto the progeny, using ~9k GBS SNPs in the progeny as a scaffold.
+* **3_plot_projections.sh**: runs `plot_projections_and_reformat.R` for each population and chromosome.
+* **plot_projections_and_reformat.R**: creates raster plots of the projected SNPs for quality control, then formats the projection genotype files for reading into TASSEL.
+* **4_merge_populations.sh**: merges projected genotype files of all populations, by chromosome.

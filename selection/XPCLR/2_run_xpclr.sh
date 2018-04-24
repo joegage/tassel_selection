@@ -1,8 +1,15 @@
-XPCLR=~/applications/XPCLR/bin/XPCLR
+## XPCLR=~/applications/XPCLR/bin/XPCLR # BAD software with bug
+XPCLR=~/applications/src_NA/XPCLR
 
-gWIN=0.001
+# ORIGINAL:
+# gWIN=0.001
+# snpWIN=50
+# GRID=1000
+# COR=0.7
+
+gWIN=0.001 ## 0.001
 snpWIN=50
-GRID=100
+GRID=100 ## 100
 COR=0.7
 
 
